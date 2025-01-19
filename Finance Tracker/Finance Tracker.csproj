@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Reference Include="Widgets.Common">
-      <HintPath>..\..\Widgets.Common\Widgets.Common\bin\Debug\net8.0-windows\Widgets.Common.dll</HintPath>
+      <HintPath>..\..\Widgets.Common\Widgets.Common\bin\Release\net8.0-windows\Widgets.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
 
@@ -33,6 +33,6 @@
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <MakeDir Directories="$(TargetDir)$(AssemblyName)" />
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(TargetDir)$(AssemblyName)" />
-    <Copy SourceFiles="$(TargetDir)tls-client-windows-64-1.7.9.dll" DestinationFolder="$(TargetDir)$(AssemblyName)\"/>
+    <Copy SourceFiles="$(TargetDir)tls-client-windows-64-1.7.9.dll" DestinationFolder="$(TargetDir)$(AssemblyName)\" />
   </Target>
 </Project>

@@ -4,7 +4,7 @@
         xmlns:dd="urn:gong-wpf-dragdrop"
         SizeToContent="Height"
         FontSize="{Binding Settings.FontSize}"
-        Title="Crypto Tracker" Height="600" Width="400">
+        Title="Finance Tracker" Height="600" Width="400">
 
     <Border>
         <Grid>

@@ -58,7 +58,7 @@ namespace Finance_Tracker
         // Window to WidgetWindow
         public WidgetWindow WidgetWindow()
         {
-            return new WidgetWindow(this, WidgetDefaultStruct());
+            return new WidgetWindow(this);
         }
 
         //WidgetWindow default settings
